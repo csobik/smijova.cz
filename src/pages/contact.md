@@ -10,7 +10,7 @@ permalink: /kontakty/index.html
     <div class="list-grid article-grid">
       <article class="list list-photo">
         <div class="photo photo-fill">
-          <img src="/assets/images/canva-media-1.png" alt="Kontaktni fotografie Barbory" />
+          <img src="{{ '/assets/images/canva-media-1.png' | url }}" alt="Kontaktni fotografie Barbory" />
         </div>
       </article>
       <article class="list article-body">

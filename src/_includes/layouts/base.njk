@@ -8,19 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}" />
   </head>
   <body class="{% if page.url != '/' %}subpage{% endif %}">
     <div class="page">
       <header class="site-header">
         <div class="container header-inner">
-          <a class="brand" href="/">
+          <a class="brand" href="{{ '/' | url }}">
             <span class="brand-mark">{{ site.name }}</span>
             <span class="brand-tag">{{ site.subtitle }}</span>
           </a>
           <nav class="nav">
             {% for item in site.nav %}
-              <a class="nav-link" href="{{ item.url }}">{{ item.label }}</a>
+              <a class="nav-link" href="{{ item.url | url }}">{{ item.label }}</a>
             {% endfor %}
           </nav>
         </div>

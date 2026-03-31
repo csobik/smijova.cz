@@ -19,7 +19,7 @@ permalink: /o-mne/index.html
       </article>
       <article class="list list-photo">
         <div class="photo photo-fill">
-          <img src="/assets/images/canva-media-2.jpg" alt="Barbora Smijova" />
+          <img src="{{ '/assets/images/canva-media-2.jpg' | url }}" alt="Barbora Smijova" />
         </div>
       </article>
     </div>
