@@ -6,6 +6,16 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        if (!params.has("config")) {
+          var basePath = window.location.pathname.replace(/index\.html$/, "");
+          params.set("config", basePath + "config.yml");
+          window.location.replace(window.location.pathname + "?" + params.toString());
+        }
+      })();
+    </script>
     <script src="https://unpkg.com/decap-cms@3.1.12/dist/decap-cms.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_OWNER/smijova.cz
+  repo: csobik/smijova.cz
   branch: main
 
 media_folder: "src/assets/uploads"
