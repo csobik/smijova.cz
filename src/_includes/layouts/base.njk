@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ site.name }} | {{ title }}</title>
+    <meta name="description" content="{{ description or site.tagline }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body class="{% if page.url != '/' %}subpage{% endif %}">
+    <div class="page">
+      <header class="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="/">
+            <span class="brand-mark">{{ site.name }}</span>
+            <span class="brand-tag">{{ site.subtitle }}</span>
+          </a>
+          <nav class="nav">
+            {% for item in site.nav %}
+              <a class="nav-link" href="{{ item.url }}">{{ item.label }}</a>
+            {% endfor %}
+          </nav>
+        </div>
+      </header>
+      <main>{{ content | safe }}</main>
+      <footer class="site-footer">
+        <div class="container footer-inner">
+          <div class="footer-title">{{ site.name }}</div>
+          <div class="footer-contact">
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            <a href="tel:{{ site.phone }}">{{ site.phone }}</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

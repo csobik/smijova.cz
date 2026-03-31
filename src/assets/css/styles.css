@@ -1,0 +1,425 @@
+@font-face {
+  font-display: swap;
+  font-family: "Canva Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  src: url("https://smijova.cz/_assets/images/cff149ee1e9d2be50ac77bcd86769d05.woff2") format("woff2");
+}
+
+:root {
+  --sage: rgb(130, 146, 118);
+  --mist: rgb(224, 224, 213);
+  --ink: #f6f6f1;
+  --ink-dark: #5d6956;
+  --page-width: min(1280px, 92vw);
+  --brand-photo-width: clamp(320px, 24vw, 480px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Canva Sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--sage);
+  color: var(--ink);
+}
+
+body.subpage {
+  background: var(--mist);
+  color: var(--ink-dark);
+}
+
+body.subpage .site-header,
+body.subpage .site-footer {
+  background: var(--sage);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: var(--page-width);
+  margin: 0 auto;
+}
+
+.site-header {
+  padding: 18px 0 24px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  width: var(--brand-photo-width);
+}
+
+.brand-mark {
+  font-family: "Playfair Display SC", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.brand-tag {
+  margin-top: 4px;
+  color: rgba(246, 246, 241, 0.74);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+  font-size: 1.08rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(246, 246, 241, 0.85);
+}
+
+body.subpage .brand-mark {
+  color: var(--ink);
+}
+
+body.subpage .brand-tag,
+body.subpage .nav,
+body.subpage .footer-inner {
+  color: rgba(246, 246, 241, 0.88);
+}
+
+body.subpage .intro-sub,
+body.subpage .text-small,
+body.subpage .tiny {
+  color: rgba(93, 105, 86, 0.92);
+}
+
+.nav-link {
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.main-flow {
+  width: var(--page-width);
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 56px) 0 clamp(34px, 5vw, 72px);
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(360px, 1.15fr);
+  gap: clamp(20px, 3vw, 48px);
+  align-items: end;
+}
+
+.pair-offset {
+  margin-top: clamp(18px, 3vw, 34px);
+}
+
+.pair-hero {
+  align-items: center;
+}
+
+.home-hero {
+  padding: clamp(8px, 1.5vw, 18px) 0 clamp(16px, 2.5vw, 28px);
+}
+
+.hero-copy {
+  max-width: 720px;
+  justify-self: end;
+  text-align: left;
+}
+
+.hero-lead {
+  margin-top: clamp(12px, 2vw, 22px);
+  max-width: 34ch;
+}
+
+.photo {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.photo-sm {
+  max-width: var(--brand-photo-width);
+}
+
+.photo-md {
+  max-width: clamp(260px, 30vw, 430px);
+}
+
+.photo-center {
+  justify-self: center;
+}
+
+.photo-start {
+  justify-self: start;
+}
+
+.photo-end {
+  justify-self: end;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.intro-name {
+  font-family: "Playfair Display SC", "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: clamp(3.2rem, 7vw, 6.4rem);
+  line-height: 1.02;
+  letter-spacing: 0.018em;
+  word-spacing: 0.04em;
+  font-weight: 400;
+}
+
+.intro-sub {
+  margin-top: 8px;
+  font-size: clamp(0.95rem, 1.4vw, 1.25rem);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: rgba(246, 246, 241, 0.72);
+}
+
+.section-title {
+  font-family: "Playfair Display SC", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  margin: 0 0 8px;
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.text-small {
+  font-size: clamp(1rem, 1.35vw, 1.28rem);
+  line-height: 1.62;
+  color: rgba(246, 246, 241, 0.86);
+}
+
+.band {
+  background: var(--mist);
+  color: var(--ink-dark);
+  margin: 22px calc(50% - 50vw);
+  padding: clamp(34px, 5vw, 72px) 0;
+}
+
+.home-nav-band {
+  padding: clamp(28px, 4vw, 54px) 0;
+}
+
+body.subpage .band {
+  background: #d9ddd2;
+}
+
+.band-inner {
+  width: var(--page-width);
+  margin: 0 auto;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: clamp(20px, 3vw, 44px);
+}
+
+.home-grid {
+  align-items: stretch;
+}
+
+.list {
+  padding: clamp(14px, 2vw, 24px);
+}
+
+.article-grid {
+  align-items: stretch;
+}
+
+.article-body {
+  align-self: stretch;
+}
+
+.list-photo {
+  border: 1px solid rgba(93, 105, 86, 0.35);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+}
+
+.photo-fill {
+  width: 100%;
+  min-height: clamp(360px, 42vw, 620px);
+}
+
+.photo-fill img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-link {
+  display: block;
+  padding: clamp(18px, 2.2vw, 28px);
+  border: 1px solid rgba(93, 105, 86, 0.35);
+  border-radius: 10px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.card-link:hover {
+  background: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+.card-link h3 {
+  font-family: "Playfair Display SC", "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  margin: 0 0 10px;
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.card-link p {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+  line-height: 1.52;
+}
+
+.list h3 {
+  font-family: "Playfair Display SC", "Times New Roman", serif;
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  margin: 0 0 6px;
+  line-height: 0.95;
+  font-weight: 400;
+}
+
+.rows {
+  border-top: 1px solid rgba(93, 105, 86, 0.5);
+}
+
+.row {
+  border-bottom: 1px solid rgba(93, 105, 86, 0.35);
+  font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+  line-height: 1.46;
+  padding: 10px 0;
+}
+
+.project-block,
+.contact-block {
+  margin-top: clamp(16px, 2.5vw, 34px);
+}
+
+.project-block .pair,
+.contact-block .pair {
+  align-items: start;
+}
+
+.tiny {
+  font-size: clamp(1rem, 1.2vw, 1.18rem);
+  line-height: 1.6;
+  color: rgba(246, 246, 241, 0.88);
+}
+
+.site-footer {
+  padding: 20px 0 28px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  padding-top: 12px;
+  font-size: 0.98rem;
+  color: rgba(246, 246, 241, 0.84);
+}
+
+body.subpage .footer-inner {
+  border-top: none;
+}
+
+.footer-title {
+  font-family: "Playfair Display SC", "Times New Roman", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pair,
+  .list-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    padding-top: 0;
+  }
+
+  .hero-copy {
+    justify-self: stretch;
+    text-align: left;
+  }
+
+  .photo-sm,
+  .photo-md {
+    max-width: min(520px, 100%);
+  }
+
+  .photo-end,
+  .photo-center {
+    justify-self: stretch;
+  }
+
+  .text-small,
+  .tiny,
+  .row,
+  .nav,
+  .footer-inner {
+    font-size: 1rem;
+  }
+
+  .band {
+    margin: 16px calc(50% - 50vw);
+    border-radius: 0;
+  }
+
+  .footer-inner,
+  .footer-contact {
+    flex-direction: column;
+  }
+}
