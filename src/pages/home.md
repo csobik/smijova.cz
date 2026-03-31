@@ -28,7 +28,7 @@ permalink: /index.html
       </a>
       <a class="card-link" href="{{ '/nabizim/' | url }}">
         <h3>Co nabízím</h3>
-        <p>Právní konzultace, mediace a dlouhodobá podpora.</p>
+        <p>Koučing, HR konzultace, mentoring a dlouhodobá podpora.</p>
       </a>
       <a class="card-link" href="{{ '/projekty/' | url }}">
         <h3>Projekty</h3>
