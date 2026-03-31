@@ -187,7 +187,6 @@ body.subpage .tiny {
   aspect-ratio: 1 / 1;
   border-radius: 22px;
   overflow: hidden;
-  border: 1px solid rgba(246, 246, 241, 0.22);
 }
 
 .hero-art-main {
@@ -195,7 +194,6 @@ body.subpage .tiny {
 }
 
 .hero-art img {
-  width: 84%;
   height: 84%;
   margin: 8%;
   object-fit: contain;
