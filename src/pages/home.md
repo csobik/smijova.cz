@@ -5,7 +5,7 @@ description: Přehled služeb, projektů a kontaktů Barbory Smijové.
 permalink: /index.html
 ---
 
-<div class="main-flow">
+<div class="main-flow home-main-flow">
   <section class="pair pair-hero home-hero">
     <div class="hero-art hero-art-main" aria-hidden="true">
       <img src="{{ '/assets/images/bs-logo.svg' | url }}" alt="" />
