@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Co nabízím
 description: Přehled služeb Barbory Smijové.
-permalink: /nabizim/index.html
+permalink: /co-nabizim/index.html
 ---
 
 <section class="band">
