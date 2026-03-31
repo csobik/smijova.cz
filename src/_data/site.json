@@ -7,7 +7,7 @@
   "address": "www.linkedin.com/in/barbora-smijova",
   "nav": [
     { "label": "O mně", "url": "/o-mne/" },
-    { "label": "Nabízím", "url": "/nabizim/" },
+    { "label": "Co nabízím", "url": "/co-nabizim/" },
     { "label": "Projekty", "url": "/projekty/" },
     { "label": "Kontakty", "url": "/kontakty/" }
   ]
