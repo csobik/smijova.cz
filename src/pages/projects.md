@@ -20,7 +20,7 @@ permalink: /projekty/index.html
       </article>
       <article class="list list-photo">
         <div class="photo photo-fill">
-          <img src="{{ '/assets/images/canva-media-4.jpg' | url }}" alt="Projektova fotografie" />
+          <img src="{{ '/assets/images/canva-media-2.jpg' | url }}" alt="Projektova fotografie" />
         </div>
       </article>
     </div>

@@ -12,7 +12,7 @@
   --ink: #f6f6f1;
   --ink-dark: #5d6956;
   --page-width: min(1280px, 92vw);
-  --brand-photo-width: clamp(320px, 24vw, 480px);
+  --hero-logo-width: clamp(240px, 22vw, 360px);
 }
 
 * {
@@ -51,7 +51,7 @@ a {
 }
 
 .site-header {
-  padding: 18px 0 24px;
+  padding: 10px 0 12px;
 }
 
 .header-inner {
@@ -65,29 +65,32 @@ a {
   display: flex;
   flex-direction: column;
   line-height: 1;
-  width: var(--brand-photo-width);
+  width: auto;
+  max-width: none;
 }
 
 .brand-mark {
   font-family: "Playfair Display SC", "Times New Roman", serif;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .brand-tag {
-  margin-top: 4px;
+  margin-top: 2px;
   color: rgba(246, 246, 241, 0.74);
-  font-size: 0.95rem;
+  font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .nav {
   display: flex;
-  gap: 16px;
-  font-size: 1.08rem;
+  gap: 12px;
+  font-size: 0.92rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: rgba(246, 246, 241, 0.85);
@@ -140,17 +143,53 @@ body.subpage .tiny {
 
 .home-hero {
   padding: clamp(8px, 1.5vw, 18px) 0 clamp(16px, 2.5vw, 28px);
+  grid-template-columns: minmax(220px, 0.8fr) minmax(360px, 1.2fr);
+  gap: clamp(10px, 1.8vw, 24px);
 }
 
 .hero-copy {
-  max-width: 720px;
+  max-width: 660px;
   justify-self: end;
   text-align: left;
 }
 
+.hero-copy-with-title .intro-name {
+  font-size: clamp(1.6rem, 3.2vw, 2.75rem);
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  transform-origin: left center;
+  text-wrap: balance;
+}
+
+.hero-art {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(246, 246, 241, 0.22);
+}
+
+.hero-art-main {
+  max-width: clamp(160px, 32vw, 260px);
+}
+
+.hero-art img {
+  width: 84%;
+  height: 84%;
+  margin: 8%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
 .hero-lead {
-  margin-top: clamp(12px, 2vw, 22px);
-  max-width: 34ch;
+  margin-top: clamp(10px, 1.4vw, 16px);
+  max-width: 26ch;
+  font-size: clamp(0.88rem, 0.95vw, 1rem);
+  padding-left: 16px;
+  border-left: 3px solid rgba(246, 246, 241, 0.45);
+  opacity: 0.95;
 }
 
 .photo {
@@ -160,7 +199,7 @@ body.subpage .tiny {
 }
 
 .photo-sm {
-  max-width: var(--brand-photo-width);
+  max-width: var(--hero-logo-width);
 }
 
 .photo-md {
@@ -393,6 +432,10 @@ body.subpage .footer-inner {
   .hero-copy {
     justify-self: stretch;
     text-align: left;
+  }
+
+  .hero-art-main {
+    max-width: min(640px, 100%);
   }
 
   .photo-sm,

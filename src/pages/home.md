@@ -7,14 +7,13 @@ permalink: /index.html
 
 <div class="main-flow">
   <section class="pair pair-hero home-hero">
-    <div class="photo photo-sm photo-start">
-      <img src="{{ '/assets/images/canva-media-1.png' | url }}" alt="Barbora Smijova" />
+    <div class="hero-art hero-art-main" aria-hidden="true">
+      <img src="{{ '/assets/images/bs-logo.svg' | url }}" alt="" />
     </div>
-    <div class="hero-copy">
-      <div class="intro-name">Barbora<br />Smijová</div>
-      <div class="intro-sub">Rozvoj lidí, týmů a lídrů</div>
+    <div class="hero-copy hero-copy-with-title">
+      <div class="intro-name">Rozvoj lidí, týmů a lídrů</div>
       <div class="text-small hero-lead">
-        Vítejte na mém profilu. Vyberte sekci, která vás zajímá.
+        Podpora růstu, spolupráce a leadershipu v moderních organizacích.
       </div>
     </div>
   </section>
