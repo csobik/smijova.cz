@@ -35,10 +35,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Package Pages artifact
+        run: tar -C dist -cf github-pages.tar .
+
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
-          path: dist
+          name: github-pages
+          path: github-pages.tar
 
   deploy:
     environment:
